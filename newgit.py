@@ -1,4 +1,14 @@
-num1=int(input("enter a number: "))
-num2=int(input("enter second number: "))
-sum=num1+num2
-print(sum)
+def user_calculator():
+    num1=(input("enter a number: "))
+    num2=(input("enter second number: "))
+    try:
+        a=int(num1)
+        b=int(num2)
+        sum1=a+b
+        return(sum1)
+    except ValueError:
+        return("you entered a string, enter a number")
+print(user_calculator())
+   
+ 
+   
